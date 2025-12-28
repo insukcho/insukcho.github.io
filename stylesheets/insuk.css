@@ -1,0 +1,17 @@
+.main-menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px; /* Adjusts spacing between items */
+}
+
+.main-menu a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.main-menu a:hover {
+  color: #007bff; /* Color change on hover */
+}

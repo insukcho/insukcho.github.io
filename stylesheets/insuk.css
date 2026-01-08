@@ -1,17 +1,28 @@
-.main-menu ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+.tab-list {
   display: flex;
-  gap: 20px; /* Adjusts spacing between items */
+  list-style: none;
+  padding: 0;
+  border-bottom: 2px solid #e0e0e0; /* The "track" under the tabs */
+  margin-bottom: 20px;
 }
 
-.main-menu a {
+.tab-item a {
+  display: block;
+  padding: 10px 20px;
   text-decoration: none;
-  color: #333;
-  font-weight: bold;
+  color: #666;
+  font-weight: 500;
+  border-bottom: 3px solid transparent; /* Placeholder for the active line */
+  transition: all 0.3s ease;
 }
 
-.main-menu a:hover {
-  color: #007bff; /* Color change on hover */
+.tab-item a:hover {
+  color: #007bff;
+  background-color: #f8f9fa;
+}
+
+/* Style for the currently selected tab */
+.tab-item.active a {
+  color: #007bff;
+  border-bottom: 3px solid #007bff; /* The blue indicator line */
 }
